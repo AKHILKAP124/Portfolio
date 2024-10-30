@@ -5,6 +5,7 @@ import { FiAlignRight } from "react-icons/fi";
 import { RxCross1 } from "react-icons/rx";
 import { IoSettingsOutline } from "react-icons/io5";
 import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
+import { logo } from "../../assets/index";
 
 export const NavBar = () => {
   
@@ -47,12 +48,12 @@ export const NavBar = () => {
           >
             <img
               className="dark:hidden"
-              src="../public/Logo/Portfolio-light-theme-logo.png"
+              src={logo.light_logo}
               alt=""
             />
             <img
               className="dark:block hidden"
-              src="../public/Logo/Portfolio-dark-theme-logo.png"
+              src={logo.dark_logo}
               alt=""
             />
           </Link>

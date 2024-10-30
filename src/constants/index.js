@@ -34,86 +34,86 @@ export const Experiences = [
 
 export const frontend = [
   {
-    id: 1,
-    logo: "../public/Skills-logo/frontend-logo/html.png",
-    title:"Html"
+    id: "f1",
+    logo: "https://i.ibb.co/GvFNdhv/html.png",
+    title: "Html",
   },
   {
-    id: 2,
-    logo: "../public/Skills-logo/frontend-logo/css.png",
-    title:"Css"
+    id: "f2",
+    logo: "https://i.ibb.co/DD3LQrM/css.png",
+    title: "Css",
   },
   {
-    id: 3,
-    logo: "../public/Skills-logo/frontend-logo/javascript.png",
-    title:"JavaScript"
+    id: "f3",
+    logo: "https://i.ibb.co/tZBY1vc/javascript.png",
+    title: "JavaScript",
   },
   {
-    id: 4,
-    logo: "../public/Skills-logo/frontend-logo/tailwind.png",
-    title:"Tailwind css"
+    id: "f4",
+    logo: "https://i.ibb.co/B48MYXd/tailwind.png",
+    title: "Tailwind css",
   },
   {
-    id: 5,
-    logo: "../public/Skills-logo/frontend-logo/react.png",
-    title:"React"
+    id: "f5",
+    logo: "https://i.ibb.co/9Hmb6ty/react.png",
+    title: "React",
   },
   {
-    id: 5,
-    logo: "../public/Skills-logo/frontend-logo/redux.png",
-    title:"Redux"
+    id: "f6",
+    logo: "https://i.ibb.co/vmVP2wM/redux.png",
+    title: "Redux",
   },
-]
+];
 
 export const backend = [
   {
-    id: 1,
-    logo: "../public/Skills-logo/backend-logo/node.png",
-    title:"Node js"
+    id: "b1",
+    logo: "https://i.ibb.co/GJvPTzy/node.png",
+    title: "Node js",
   },
   {
-    id: 2,
-    logo: "../public/Skills-logo/backend-logo/express.png",
-    title:"Expressjs"
+    id: "b2",
+    logo: "https://i.ibb.co/9crLf5P/express.png",
+    title: "Expressjs",
   },
   {
-    id: 3,
-    logo: "../public/Skills-logo/backend-logo/mongodb.png",
-    title:"MongoDB"
+    id: "b3",
+    logo: "https://i.ibb.co/27TqW3p/mongodb.png",
+    title: "MongoDB",
   },
   {
-    id: 4,
-    logo: "../public/Skills-logo/backend-logo/cloudinary.png",
-    title:"Cloudinary"
+    id: "b4",
+    logo: "https://i.ibb.co/DrnLBP3/cloudinary.png",
+    title: "Cloudinary",
   },
   {
-    id: 5,
-    logo: "../public/Skills-logo/backend-logo/firebase.png",
-    title:"Firebase"
+    id: "b5",
+    logo: "https://i.ibb.co/QXN1PyG/firebase.png",
+    title: "Firebase",
   },
   {
-    id: 6,
-    logo: "../public/Skills-logo/backend-logo/postman.png",
-    title:"Postman"
+    id: "b6",
+    logo: "https://i.ibb.co/26FVq7s/postman.png",
+    title: "Postman",
   },
-]
+];
 export const other = [
   {
-    id: 1,
-    logo: "../public/Skills-logo/other-logo/git.png",
-    title:"Git"
+    id: "o1",
+    logo: "https://i.ibb.co/kqQ8Ft8/git.png",
+    title: "Git",
   },
   {
-    id: 2,
-    logo: "../public/Skills-logo/other-logo/vscode.png",
-    title:"VS Code"
+    id: "o2",
+    logo: "https://i.ibb.co/pj1pt2q/vscode.png",
+    title: "VS Code",
   },
   {
-    id: 3,
-    logo: "../public/Skills-logo/other-logo/npm.png",
-    title:"npm"
+    id: "o3",
+    logo: "https://i.ibb.co/2ZxD7S2/npm.png",
+    title: "npm",
   },
-]
+];
 
 export const projects = [
   {

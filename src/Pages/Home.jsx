@@ -1,5 +1,6 @@
 import { FaArrowUpLong } from "react-icons/fa6";
 import Button from "../Components/download-button/Button";
+import { image } from "../assets";
 
 export const Home = () => {
   return (
@@ -12,7 +13,7 @@ export const Home = () => {
           <div className="w-44 h-44 md:w-60 md:h-60 lg:w-72 lg:h-72 rounded-full border ">
             <img
               className="w-full h-full object-cover object-top rounded-full"
-              src="../src/assets/Images/akhil.jpg"
+              src={image.URL}
               alt="Image"
             />
           </div>
