@@ -16,7 +16,7 @@
 }
 
 .sm{
-    @apply sm:flex sm:flex-row-reverse sm:items-center sm:justify-around sm:pt-36
+    @apply sm:flex sm:flex-row-reverse sm:items-center sm:justify-around
 }
 
 .respon-home-headtext{
@@ -24,5 +24,5 @@
 }
 
 .respon-layout{
-    @apply md:px-10 lg:px-16 xl:px-24 2xl:px-36
+    @apply md:px-10 lg:px-16  xl:px-24 2xl:px-36
 }

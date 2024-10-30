@@ -1,6 +1,9 @@
+
 import styled from "styled-components";
 
 const Switch = () => {
+  
+
   const change = () => {
     if (document.querySelector("#toggleBtn").checked) {
       document.querySelector("html").classList.add("dark");

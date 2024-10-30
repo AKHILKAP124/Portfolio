@@ -40,7 +40,7 @@ export const Experience = () => {
                   </h4>
                 </div>
               </div>
-              <div className="flex items-center justify-center xl:ml-96">
+              <div className="flex items-center justify-center xl:ml-[45rem]">
                 <p className="text-xs lg:text-lg font-semibold font-[Oxanium] text-[#303030] dark:text-[#818181]">
                   {link.duration}
                 </p>

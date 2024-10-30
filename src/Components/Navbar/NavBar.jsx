@@ -7,6 +7,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
 
 export const NavBar = () => {
+  
   const [active, setActive] = useState();
   const [toggle, setToggle] = useState(true);
   const [scrolled, setScrolled] = useState(false);
@@ -31,7 +32,7 @@ export const NavBar = () => {
       <nav
         className={`px-6 sm:px-16 w-full py-1 xl:py-3 flex items-center justify-between md:justify-around xl:px-52 xl:justify-between fixed dark:text-[#e5eff8] ${
           scrolled
-            ? "bg-[#ffffff] dark:bg-[#212121] border-b-2 border-slate-200 dark:border-[#303030]"
+            ? " backdrop-blur dark:backdrop-blur"
             : "bg-transparent"
         }`}
       >
@@ -78,7 +79,7 @@ export const NavBar = () => {
                 </li>
               ))}
             </ul>
-            <div className="absolute top-1 -right-16 ">
+            <div className="absolute top-0 -right-16 transition-transform ">
               {toggle ? (
                 <IoSettingsOutline
                   className="text-2xl cursor-pointer"
@@ -118,7 +119,7 @@ export const NavBar = () => {
           <div
             className={`${
               toggle ? "hidden" : "block"
-            } w-40 rounded-lg p-4 absolute top-16 md:top-6 md:right-20 lg:right-28 xl:right-32 2xl:right-36
+            } w-40 rounded-lg p-4 absolute z-50 top-16 md:top-6 md:right-20 lg:right-28 xl:right-32 2xl:right-36
             bg-[#cdf1ff] dark:bg-[#3e3e3e] flex flex-col gap-4`}
           >
             <div className=" border border-black rounded-xl px-2 py-1">
