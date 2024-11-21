@@ -12,12 +12,31 @@ export function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
-    console.log("Form submitted:", { name, email, message });
-    toast.success("Message sent successfully!");
-    setName("");
-    setEmail("");
-    setMessage("");
+    e.stopPropagation();
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("email", email);
+    formData.append("message", message);
+
+    fetch(
+      "https://script.google.com/macros/s/AKfycbzQ2Ko0ktlwO2iI3eddvGz65J_PZBl159beEcIM0q0-jVJ_9UD_jY25CyJe1lXUcB-u/exec",
+      {
+        method: "POST",
+        body: formData,
+      }
+    )
+      .then((res) => {
+        if (res.ok) {
+          toast.success("Message sent successfully!");
+          setName("");
+          setEmail("");
+          setMessage("");
+        }
+      })
+      .catch((error) => {
+        console.error("Error sending message:", error);
+        toast.error("Failed to send message. Please try again.");
+      });
   };
 
   return (
@@ -54,7 +73,11 @@ export function Contact() {
             <div className="md:flex">
               <div className="p-8 w-full">
                 {/* <h2 className="text-2xl font-bold  mb-4">Contact Me</h2> */}
-                <form onSubmit={handleSubmit} className="space-y-6 ">
+                <form
+                  method="POST"
+                  onSubmit={handleSubmit}
+                  className="space-y-6 "
+                >
                   <div>
                     <label
                       htmlFor="name"
@@ -66,6 +89,7 @@ export function Contact() {
                       type="text"
                       id="name"
                       value={name}
+                      name="name"
                       onChange={(e) => setName(e.target.value)}
                       required
                       className="w-full mt-1 px-3 py-2 border rounded-md bg-transparent dark:border-[#4e4e4e]"
@@ -83,6 +107,7 @@ export function Contact() {
                       type="email"
                       id="email"
                       value={email}
+                      name="email"
                       onChange={(e) => setEmail(e.target.value)}
                       required
                       className="w-full mt-1 px-3 py-2 border rounded-md bg-transparent dark:border-[#4e4e4e]"
@@ -99,6 +124,7 @@ export function Contact() {
                     <textarea
                       id="message"
                       value={message}
+                      name="message"
                       onChange={(e) => setMessage(e.target.value)}
                       required
                       className="w-full min-h-20 mt-1 px-3 py-2 border rounded-md text-balance bg-transparent dark:border-[#4e4e4e]"
