@@ -22,9 +22,10 @@ export const Home = () => {
           <h1 className="text-4xl font-bold font-[Oxanium] mt-4 respon-home-headtext">
             Hii, I{`'`}m <span>Akhil</span> 🙋‍♂️
           </h1>
-          <p className="font-[Oxanium] sm:text-xl lg:text-3xl mt-2 sm:mt-4">
-            Software Engineer turned Entrepreneur. I love building things and
-            helping people. Very active on Twitter.
+          <p className="font-[Oxanium] sm:text-xl mt-2 sm:mt-4">
+            Web developer with expertise in building dynamic, responsive
+            websites using HTML, CSS, JavaScript, and popular frameworks like
+            React and Node.js
           </p>
           <Button />
         </div>

@@ -4,7 +4,7 @@ const Button = () => {
   const downloadMsg = () => {};
   return (
     <Link
-      to="https://drive.google.com/uc?export=download&id=1STqIDEDruwtD9KMCCK3NYHRlzqR959wd"
+      to="https://drive.google.com/file/d/1J7Ih_A-NN6OZPuCkjH5HenRe0zjXSEGM/view?usp=sharing"
       onClick={downloadMsg}
     >
       <button className=" mt-4 lg:mt-8 cursor-pointer flex justify-between font-semibold font-[Oxanium] border-2 border-[#212121] dark:border-[white] dark:text-white px-2 py-2 md:px-3 md:py-3  rounded-lg  text-[#212121] tracking-wider shadow-xl hover:bg-slate-100 dark:hover:bg-[#3e3e3e] hover:scale-105 duration-500 hover:ring-1 w-[150px]">

@@ -1,4 +1,4 @@
-import{ CodeBtn, SeeMoreBtn, WebBtn } from "../Components/Button/Button";
+import { CodeBtn, SeeMoreBtn, WebBtn } from "../Components/Button/Button";
 import { projects } from "../constants";
 
 export const Projects = () => {
@@ -9,7 +9,10 @@ export const Projects = () => {
           <h1 className="text-xl font-semibold font-[Oxanium] md:text-2xl lg:text-3xl xl:text-4xl">
             My Projects
           </h1>
-          <h1 className="mt-8 xl:mt-16 text-3xl text-center font-bold font-[Oxanium] sm:text-4xl md:text-6xl lg:text-7xl xl:font-semibold  xl:text-8xl">
+          <h1 className="mt-8 xl:mt-16 text-3xl text-center font-bold font-[Oxanium]">
+            No Projects
+          </h1>
+          {/* <h1 className="mt-8 xl:mt-16 text-3xl text-center font-bold font-[Oxanium] sm:text-4xl md:text-6xl lg:text-7xl xl:font-semibold  xl:text-8xl">
             Check out my latest work{" "}
           </h1>
           <h2 className="mx-auto text-center md:text-3xl w-full lg:w-[90%] lg:text-2xl text-[#6d6d6d] ">
@@ -19,7 +22,7 @@ export const Projects = () => {
           <div className="mt-5 lg:mt-8 flex flex-col lg:flex-row justify-around gap-4 md:gap-10 ">
             {/* Project Cards */}
 
-            {projects.map((link) => (
+          {/* {projects.map((link) => (
               <div
                 key={link.id}
                 className="w-full h-fit border-2 rounded-lg flex flex-col gap-3 p-2 dark:border-[#6d6d6d]
@@ -61,9 +64,9 @@ export const Projects = () => {
               </div>
             ))}
           </div>
-            <SeeMoreBtn />
+            <SeeMoreBtn /> */}
         </div>
       </section>
     </>
   );
-}
+};

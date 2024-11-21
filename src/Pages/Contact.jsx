@@ -21,8 +21,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact"
-    className="">
+    <section id="contact" className="">
       <div className=" px-6 sm:px-16 md:px-28 lg:px-32 xl:px-40">
         <h1 className="text-xl font-semibold font-[Oxanium] md:text-2xl lg:text-3xl xl:text-4xl">
           Contact
@@ -110,7 +109,7 @@ export function Contact() {
                   <div>
                     <button
                       type="submit"
-                      className="w-full border-2 rounded-md text-sm py-2 text-white hover:bg-[#3b3b3b] bg-[#212121] dark:bg-blue-50 dark:text-[#212121] "
+                      className="w-full border rounded-md text-sm py-2 text-white hover:bg-[#3b3b3b] bg-[#212121] dark:bg-blue-50 dark:border-gray-500 dark:bg-transparent dark:text-white dark:hover:bg-[#2e2e2e]"
                     >
                       Send Message
                     </button>

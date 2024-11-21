@@ -10,12 +10,14 @@ export const About = () => {
           About
         </h1>
         <p className="text-[16px] text-justify font-[Oxanium] md:text-lg md:mt-4 xl:w-3/4 lg:text-2xl">
-          At the end of 2022, I quit my job as a software engineer to go
-          fulltime into building and scaling my own SaaS businesses. In the
-          past, I pursued a double degree in computer science and business,
-          interned at big tech companies in Silicon Valley, and competed in over
-          21 hackathons for fun. I also had the pleasure of being a part of the
-          first ever in-person cohort of buildspace called buildspace sf1.
+          Web Developer with expertise in HTML, CSS, JavaScript, and React.js
+          for front-end development, coupled with Node.js for back-end
+          solutions. Proficient in using Tailwind CSS for efficient styling,
+          MongoDB for database management, and Postman for API testing.
+          Committed to creating responsive, user-friendly web applications that
+          combine aesthetic appeal with robust functionality. Continuously
+          expanding skills to stay current with emerging web technologies and
+          best practices.
         </p>
       </div>
     </section>
