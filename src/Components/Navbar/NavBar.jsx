@@ -5,10 +5,9 @@ import { FiAlignRight } from "react-icons/fi";
 import { RxCross1 } from "react-icons/rx";
 import { IoSettingsOutline } from "react-icons/io5";
 import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
-import { logo } from "../../assets/index";
+// import { logo } from "../../assets/index";
 
 export const NavBar = () => {
-  
   const [active, setActive] = useState();
   const [toggle, setToggle] = useState(true);
   const [scrolled, setScrolled] = useState(false);
@@ -16,7 +15,7 @@ export const NavBar = () => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       if (scrollTop > 50) {
-        setToggle(true)
+        setToggle(true);
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -32,9 +31,7 @@ export const NavBar = () => {
     <>
       <nav
         className={`px-6 sm:px-16 w-full py-1 xl:py-3 flex items-center justify-between md:justify-around xl:px-52 xl:justify-between fixed dark:text-[#e5eff8] ${
-          scrolled
-            ? " backdrop-blur dark:backdrop-blur"
-            : "bg-transparent"
+          scrolled ? " backdrop-blur dark:backdrop-blur" : "bg-transparent"
         }`}
       >
         <div className="w-24 sm:w-32">
@@ -46,7 +43,7 @@ export const NavBar = () => {
               window.scrollTo(0, 0);
             }}
           >
-            <img
+            {/* <img
               className="dark:hidden"
               src={logo.light_logo}
               alt=""
@@ -55,7 +52,8 @@ export const NavBar = () => {
               className="dark:block hidden"
               src={logo.dark_logo}
               alt=""
-            />
+            /> */}
+            <h1 className="text-4xl font-bold">Logo</h1>
           </Link>
         </div>
         <div className=" hidden md:block">

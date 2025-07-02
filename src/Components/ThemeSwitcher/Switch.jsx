@@ -3,14 +3,23 @@ import styled from "styled-components";
 
 const Switch = () => {
   
+  if (window.localStorage.getItem("theme") === "dark") {
+    document.querySelector("html").classList.add("dark");
+  }
 
   const change = () => {
-    if (document.querySelector("#toggleBtn").checked) {
+
+    window.localStorage.setItem("theme", document.querySelector("#toggleBtn").checked ? "dark" : "light");
+
+    if (window.localStorage.getItem("theme") === "dark") {
       document.querySelector("html").classList.add("dark");
     } else {
       document.querySelector("html").classList.remove("dark");
     }
   };
+
+
+
   return (
     <StyledWrapper>
       <label className="switch">
@@ -31,7 +40,8 @@ const Switch = () => {
           type="checkbox"
           id="toggleBtn"
           className="input"
-          onChange={change}
+          onClick={change}
+          checked={window.localStorage.getItem("theme") === "dark" ? true : false}
         />
         <span className="slider" />
       </label>

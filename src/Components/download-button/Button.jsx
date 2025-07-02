@@ -4,7 +4,7 @@ const Button = () => {
   const downloadMsg = () => {};
   return (
     <Link
-      to="https://drive.google.com/file/d/1J7Ih_A-NN6OZPuCkjH5HenRe0zjXSEGM/view?usp=sharing"
+      to="https://drive.google.com/file/d/1_OOAaeeD5SYUG7skY1GUW1uQpfI6KEhH/view?usp=drive_link"
       target="_blank"
       onClick={downloadMsg}
     >

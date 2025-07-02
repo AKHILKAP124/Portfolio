@@ -13,6 +13,12 @@ export function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     e.stopPropagation();
+
+    if (!name || !email || !message) {
+      toast.error("Please fill in all fields.");
+      return;
+    }
+
     const formData = new FormData();
     formData.append("name", name);
     formData.append("email", email);
@@ -47,7 +53,7 @@ export function Contact() {
         </h1>
       </div>
       <div className="respon-layout lg:mt-8">
-        <div className="min-h-fit min-w-full mb-20 text-sm py-2 px-4 sm:px-6 lg:px-8 dark:bg-[#212121] lg:flex flex-row-reverse justify-between lg:mb-24">
+        <div className="min-h-fit min-w-full mb-20 text-sm py-2 px-4 sm:px-6 lg:px-8 dark:bg-[#212121] flex flex-col-reverse lg:flex-row-reverse gap-4 lg:mb-24">
           <div className="w-full py-2 px-6 flex flex-col justify-center">
             <div className=" flex flex-col items-center">
               <h1 className=" text-3xl font-bold font-[Oxanium] md:text-4xl lg:text-5xl ">
@@ -56,7 +62,7 @@ export function Contact() {
               <p className=" w-full md:w-[70%] lg:w-[90%] md:text-lg lg:text-xl text-center  text-[#6d6d6d]">
                 Want to chat? Just shoot me a dm with a{" "}
                 <Link
-                  to="https://github.com/AKHILKAP124"
+                  to="https://github.com/"
                   className="text-blue-500"
                 >
                   direct question on Linkdin
@@ -69,7 +75,7 @@ export function Contact() {
               <SocialBtns />
             </div>
           </div>
-          <div className="w-full h-fit bg-white dark:bg-[#212121]  rounded-lg shadow-xl overflow-hidden md:max-w-2xl hidden lg:block">
+          <div className="w-full h-fit bg-white dark:bg-[#212121]  rounded-lg shadow-xl overflow-hidden md:max-w-2xl hidde lg:block">
             <div className="md:flex">
               <div className="p-8 w-full">
                 {/* <h2 className="text-2xl font-bold  mb-4">Contact Me</h2> */}

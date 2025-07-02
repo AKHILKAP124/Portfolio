@@ -36,7 +36,7 @@ export const SocialBtns = () => {
     <ul className="flex justify-center items-center mt-6 space-x-5">
       <li>
         <Link
-          to="https://github.com/AKHILKAP124"
+          to="https://github.com/"
           target="_blank"
           className="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
         >
@@ -57,7 +57,7 @@ export const SocialBtns = () => {
 
       <li>
         <Link
-          to="https://www.linkedin.com/in/akhilkumar39/"
+          to="https://www.linkedin.com/"
           target="_blank"
           className="fill-gray-500 hover:fill-gray-900 dark:hover:fill-white dark:fill-gray-400"
         >
@@ -74,7 +74,7 @@ export const SocialBtns = () => {
 
       <li>
         <Link
-          to="https://wa.link/bo6wkl"
+          to="https://whatsapp.com/"
           target="_blank"
           className="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
         >
@@ -92,7 +92,7 @@ export const SocialBtns = () => {
 
       <li>
         <Link
-          to="https://msng.link/o?kapur_akhil_39=ig"
+          to="https://instagram.com/"
           target="_blank"
           className="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
         >
@@ -113,7 +113,7 @@ export const SocialBtns = () => {
 
       <li>
         <Link
-          to="/yt"
+          to="https://www.youtube.com/"
           target="_blank"
           className="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
         >
